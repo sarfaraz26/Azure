@@ -1,0 +1,46 @@
+﻿-- CREATE DB
+CREATE DATABASE Company
+GO
+
+
+-- Create Employee Table
+CREATE TABLE Employee
+(
+	ID INT IDENTITY(1,1) PRIMARY KEY,
+	Name NVARCHAR(200),
+	Age INT,
+	City NVARCHAR(10),
+	Working BIT DEFAULT (1)
+)
+
+
+-- Insert statements
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('John Doe', 30, 'New York', 1);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('Jane Smith', 25, 'Los Angeles', 1);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('Sam Brown', 40, 'Chicago', 0);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('Emily Johnson', 35, 'Houston', 1);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('Michael Williams', 28, 'Phoenix', 1);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('Sarah Lee', 22, 'Philadelphia', 0);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('David Wilson', 50, 'San Antonio', 1);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('Laura Martinez', 27, 'San Diego', 1);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('James Taylor', 45, 'Dallas', 0);
+
+INSERT INTO Employee (Name, Age, City, Working)
+VALUES ('Olivia Moore', 32, 'San Jose', 1);

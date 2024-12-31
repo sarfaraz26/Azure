@@ -1,0 +1,27 @@
+﻿USE Company
+GO
+
+
+CREATE PROCEDURE usp_GetEmployee
+	@id int = null
+AS
+BEGIN
+	IF @id is null
+	begin
+		Select 
+			ID,
+			Name,
+			Age,
+			City
+		FROM Employee
+	end
+	ELSE
+	begin
+		Select 
+			ID,
+			Name,
+			Age,
+			City
+		FROM Employee WHERE ID = @id	
+	end
+END

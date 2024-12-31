@@ -1,0 +1,15 @@
+﻿USE Company
+GO
+
+
+CREATE PROCEDURE usp_UpdateEmployee
+	@id int,
+	@name nvarchar(200),
+	@age int,
+	@working bit
+AS
+BEGIN
+	UPDATE Employee
+		SET Name=@name, Age=@age, Working=@working
+	WHERE ID = @id
+END

@@ -1,0 +1,10 @@
+﻿USE Company
+GO
+
+
+CREATE PROCEDURE usp_DeleteEmployee
+	@id int
+AS
+BEGIN
+	DELETE FROM Employee Where ID = @id
+END

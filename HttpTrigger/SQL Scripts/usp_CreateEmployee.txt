@@ -1,0 +1,15 @@
+﻿USE Company
+GO
+
+
+CREATE PROCEDURE usp_CreateEmployee
+	@name nvarchar(200),
+	@age int,
+	@city nvarchar(10)
+AS
+BEGIN
+	INSERT INTO Employee
+		(Name, Age, City)
+	VALUES
+		(@name, @age, @city)
+END
