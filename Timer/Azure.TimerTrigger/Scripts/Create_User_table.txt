@@ -1,0 +1,23 @@
+﻿/****** Object:  Table [dbo].[Users]    Script Date: 2/13/2025 5:10:49 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Users](
+	[ID] [uniqueidentifier] NULL,
+	[Name] [nvarchar](100) NOT NULL,
+	[Email] [nvarchar](200) NOT NULL,
+	[Deleted] [bit] NULL,
+	[LastLoginDtTm] [datetime] NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Users] ADD  DEFAULT (newid()) FOR [ID]
+GO
+
+ALTER TABLE [dbo].[Users] ADD  DEFAULT ((0)) FOR [Deleted]
+GO
+
+

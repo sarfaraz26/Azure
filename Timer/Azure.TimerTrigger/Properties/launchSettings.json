@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Azure.TimerTrigger": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7193",
+      "launchBrowser": false
+    }
+  }
+}

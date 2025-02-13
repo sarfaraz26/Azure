@@ -1,0 +1,10 @@
+﻿CREATE PROCEDURE usp_MarkUserExpire  
+ @ExpirationDay INT  
+AS  
+BEGIN  
+ UPDATE Users  
+  SET Deleted = 1  
+ Where DATEDIFF(DAY, LastLoginDtTm,GETUTCDATE()) >= @ExpirationDay  
+END  
+  
+  
