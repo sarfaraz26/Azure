@@ -5,13 +5,7 @@ VisualStudioVersion = 17.12.35323.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Timer", "Timer", "{D355FEB6-9E9E-44BD-A0D7-231DFBCF9357}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Http", "Http", "{36413426-6AD4-447F-8F52-8EB22886E328}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.TimerTrigger", "Timer\Azure.TimerTrigger\Azure.TimerTrigger.csproj", "{567EEC46-95D2-4C11-85EB-0B7210C00B7C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.HttpTrigger", "Http\Azure.HttpTrigger\Azure.HttpTrigger.csproj", "{B7C7DA66-3CD2-4B78-9BB8-C6CC40B04ABF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.ServiceBusQueueTrigger", "Http\Azure.ServiceBusQueueTrigger\Azure.ServiceBusQueueTrigger.csproj", "{BF32178B-0B46-4742-92B6-8AC8B1FD30E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,22 +17,12 @@ Global
 		{567EEC46-95D2-4C11-85EB-0B7210C00B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{567EEC46-95D2-4C11-85EB-0B7210C00B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{567EEC46-95D2-4C11-85EB-0B7210C00B7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B7C7DA66-3CD2-4B78-9BB8-C6CC40B04ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B7C7DA66-3CD2-4B78-9BB8-C6CC40B04ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B7C7DA66-3CD2-4B78-9BB8-C6CC40B04ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B7C7DA66-3CD2-4B78-9BB8-C6CC40B04ABF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF32178B-0B46-4742-92B6-8AC8B1FD30E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF32178B-0B46-4742-92B6-8AC8B1FD30E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF32178B-0B46-4742-92B6-8AC8B1FD30E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF32178B-0B46-4742-92B6-8AC8B1FD30E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{567EEC46-95D2-4C11-85EB-0B7210C00B7C} = {D355FEB6-9E9E-44BD-A0D7-231DFBCF9357}
-		{B7C7DA66-3CD2-4B78-9BB8-C6CC40B04ABF} = {36413426-6AD4-447F-8F52-8EB22886E328}
-		{BF32178B-0B46-4742-92B6-8AC8B1FD30E2} = {36413426-6AD4-447F-8F52-8EB22886E328}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C9DDCA8-08C8-4F49-AA42-C14F7E191764}
