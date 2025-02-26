@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Azure.ServiceBus": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7227",
+      "launchBrowser": false
+    }
+  }
+}

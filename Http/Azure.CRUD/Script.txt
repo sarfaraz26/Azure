@@ -1,0 +1,17 @@
+﻿CREATE TABLE Users (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    IsAdmin BIT DEFAULT (0)
+);
+
+
+INSERT INTO Users (Name, IsAdmin) VALUES ('John Doe', 1);   -- Admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('Jane Smith', 0);  -- Non-admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('Alice Johnson', 1);  -- Admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('Bob Brown', 0);   -- Non-admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('Charlie Davis', 0); -- Non-admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('David Lee', 1);    -- Admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('Eva White', 0);    -- Non-admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('Frank Harris', 0);  -- Non-admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('Grace Miller', 1);  -- Admin
+INSERT INTO Users (Name, IsAdmin) VALUES ('Henry Clark', 0);  -- Non-admin
